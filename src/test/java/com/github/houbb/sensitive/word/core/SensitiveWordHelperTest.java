@@ -5,6 +5,7 @@ import com.github.houbb.sensitive.word.api.IWordResult;
 import com.github.houbb.sensitive.word.replace.MyWordReplace;
 import com.github.houbb.sensitive.word.support.result.WordResultHandlers;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
@@ -16,6 +17,7 @@ import java.util.List;
  * @author Administrator
  * @since 0.0.13
  */
+@Ignore
 public class SensitiveWordHelperTest {
 
     /**

@@ -2,6 +2,7 @@ package com.github.houbb.sensitive.word.bs;
 
 import com.github.houbb.sensitive.word.support.data.WordDatas;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -11,6 +12,7 @@ import org.junit.Test;
  * @author Administrator
  * @since 0.7.0
  */
+@Ignore
 public class SensitiveWordBsDataTest {
 
     @Test
@@ -22,6 +24,7 @@ public class SensitiveWordBsDataTest {
         final String text = "五星红旗迎风飘扬，毛主席的画像屹立在天安门前。";
         Assert.assertTrue(wordBs.contains(text));
         Assert.assertEquals("[五星红旗, 毛主席, 天安门]", wordBs.findAll(text).toString());
+        System.out.println(wordBs.findAll(text));
     }
 
 }

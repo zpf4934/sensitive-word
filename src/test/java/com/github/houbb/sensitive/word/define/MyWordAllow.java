@@ -1,6 +1,7 @@
 package com.github.houbb.sensitive.word.define;
 
 import com.github.houbb.sensitive.word.api.IWordAllow;
+import org.junit.Ignore;
 
 import java.util.Arrays;
 import java.util.List;

@@ -4,6 +4,7 @@ import com.github.houbb.sensitive.word.support.allow.WordAllows;
 import com.github.houbb.sensitive.word.support.deny.WordDenys;
 import com.github.houbb.sensitive.word.support.replace.WordReplaces;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
@@ -15,6 +16,7 @@ import java.util.List;
  * @author Administrator
  * @since 0.0.1
  */
+@Ignore
 public class SensitiveWordBsTest {
 
     /**

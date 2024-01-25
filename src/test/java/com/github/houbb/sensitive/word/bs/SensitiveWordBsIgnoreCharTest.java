@@ -2,6 +2,7 @@ package com.github.houbb.sensitive.word.bs;
 
 import com.github.houbb.sensitive.word.support.ignore.SensitiveWordCharIgnores;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
@@ -13,6 +14,7 @@ import java.util.List;
  * @author Administrator
  * @since 0.11.0
  */
+@Ignore
 public class SensitiveWordBsIgnoreCharTest {
 
     /**

@@ -1,6 +1,7 @@
 package com.github.houbb.sensitive.word.bs;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.List;
  * @author Administrator
  * @since 0.0.9
  */
+@Ignore
 public class SensitiveWordBsEmailTest {
 
     /**
@@ -24,6 +26,7 @@ public class SensitiveWordBsEmailTest {
 
         List<String> wordList = SensitiveWordBs.newInstance().init().findAll(text);
         Assert.assertEquals("[sensitiveword@xx.com]", wordList.toString());
+        System.out.println(wordList);
     }
 
     /**

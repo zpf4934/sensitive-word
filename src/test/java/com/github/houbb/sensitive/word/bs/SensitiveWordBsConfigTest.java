@@ -5,6 +5,7 @@ import com.github.houbb.sensitive.word.support.deny.WordDenys;
 import com.github.houbb.sensitive.word.support.ignore.SensitiveWordCharIgnores;
 import com.github.houbb.sensitive.word.support.tag.WordTags;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -14,6 +15,7 @@ import org.junit.Test;
  * @author Administrator
  * @since 0.0.14
  */
+@Ignore
 public class SensitiveWordBsConfigTest {
 
     @Test

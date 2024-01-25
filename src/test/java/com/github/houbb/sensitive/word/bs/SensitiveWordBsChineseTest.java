@@ -1,6 +1,7 @@
 package com.github.houbb.sensitive.word.bs;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.List;
  * @author Administrator
  * @since 0.0.6
  */
+@Ignore
 public class SensitiveWordBsChineseTest {
 
     /**

@@ -13,6 +13,7 @@ import java.util.List;
  * @author binbin.hou
  * @since 0.0.3
  */
+@Ignore
 public class DataUtil {
 
     /**

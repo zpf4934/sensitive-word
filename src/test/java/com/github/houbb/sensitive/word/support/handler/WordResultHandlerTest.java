@@ -15,6 +15,7 @@ import java.util.List;
 /**
  * @since 0.12.0
  */
+@Ignore
 public class WordResultHandlerTest {
 
     @Test

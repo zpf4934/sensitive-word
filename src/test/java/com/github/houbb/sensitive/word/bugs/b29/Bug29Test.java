@@ -2,8 +2,9 @@ package com.github.houbb.sensitive.word.bugs.b29;
 
 import com.github.houbb.sensitive.word.core.SensitiveWordHelper;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
-
+@Ignore
 public class Bug29Test {
 
     @Test

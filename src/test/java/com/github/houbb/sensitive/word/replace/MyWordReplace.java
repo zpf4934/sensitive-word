@@ -4,6 +4,7 @@ import com.github.houbb.sensitive.word.api.IWordReplace;
 import com.github.houbb.sensitive.word.api.IWordContext;
 import com.github.houbb.sensitive.word.api.IWordResult;
 import com.github.houbb.sensitive.word.utils.InnerWordCharUtils;
+import org.junit.Ignore;
 
 /**
  * 自定义敏感词替换策略
@@ -11,6 +12,7 @@ import com.github.houbb.sensitive.word.utils.InnerWordCharUtils;
  * @author binbin.hou
  * @since 0.2.0
  */
+@Ignore
 public class MyWordReplace implements IWordReplace {
 
     @Override

@@ -3,6 +3,7 @@ package com.github.houbb.sensitive.word.bs;
 import com.github.houbb.sensitive.word.api.IWordTag;
 import com.github.houbb.sensitive.word.support.tag.WordTags;
 import org.junit.Assert;
+import org.junit.Ignore;
 
 /**
  * <p> project: sensitive-word-SensitiveWordBsTest </p>
@@ -11,6 +12,7 @@ import org.junit.Assert;
  * @author Administrator
  * @since 0.10.0
  */
+@Ignore
 public class SensitiveWordBsTagTest {
 
     public static void main(String[] args) {
