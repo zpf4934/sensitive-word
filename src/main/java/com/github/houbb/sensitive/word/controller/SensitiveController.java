@@ -1,6 +1,7 @@
 package com.github.houbb.sensitive.word.controller;
 
 import com.github.houbb.sensitive.word.bs.SensitiveWordBs;
+import com.github.houbb.sensitive.word.param.ConverterParam;
 import com.github.houbb.sensitive.word.param.SensitiveParam;
 import com.github.houbb.sensitive.word.param.SensitiveResult;
 import com.github.houbb.sensitive.word.support.database.SqliteDB;
@@ -20,7 +21,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Controller
 @ResponseBody
@@ -110,23 +110,6 @@ public class SensitiveController {
             logger.info("更新检测器");
             sensitive.init();
         }
-//        SensitiveWordBs sensitive = SensitiveWordBs.newInstance()
-//                                                    .ignoreCase(param.isIgnoreCase())
-//                                                    .ignoreWidth(param.isIgnoreWidth())
-//                                                    .ignoreNumStyle(param.isIgnoreNumStyle())
-//                                                    .ignoreChineseStyle(param.isIgnoreChineseStyle())
-//                                                    .ignoreEnglishStyle(param.isIgnoreEnglishStyle())
-//                                                    .ignoreRepeat(param.isIgnoreRepeat())
-//                                                    .enableNumCheck(param.isEnableNumCheck())
-//                                                    .enableEmailCheck(param.isEnableEmailCheck())
-//                                                    .enableUrlCheck(param.isEnableUrlCheck())
-//                                                    .enableWordCheck(param.isEnableWordCheck())
-//                                                    .numCheckLen(param.getNumCheckLen())
-//                                                    .wordReplace(WordReplaces.chars(param.getWordReplace()));
-//        if(param.isIgnoreSpecial()){
-//            sensitive.charIgnore(SensitiveWordCharIgnores.specialChars());
-//        }
-//        return sensitive.init();
     }
 
     @RequestMapping(value = "/find_all", method = RequestMethod.POST)
@@ -219,6 +202,7 @@ public class SensitiveController {
         }
         return response;
     }
+
 
     public void export_data(){
         List<String> tables = Arrays.asList("sensitive_words","sensitive_words_deny");
